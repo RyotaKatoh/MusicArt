@@ -1,0 +1,11 @@
+# hidden/temp files
+.DS_Store
+*.swp
+*~.nib
+
+# Build dir
+build/
+
+# Xcode project files except for the project file
+*.xcodeproj/
+!*.xcodeproj/project.pbxproj
