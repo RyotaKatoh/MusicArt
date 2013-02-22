@@ -5,7 +5,8 @@ MPPicker *picker;
 
 //--------------------------------------------------------------
 void testApp::setup(){
-	ofSetFrameRate(30);
+	//ofSetFrameRate(30);
+    [[UIApplication sharedApplication] setIdleTimerDisabled:YES]; 
     ofEnableAlphaBlending(); //アルファ値の使用を可能にする
     ofSetCircleResolution(32);
     ofRegisterTouchEvents(this);

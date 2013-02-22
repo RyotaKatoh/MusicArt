@@ -16,6 +16,9 @@
     if (self) {
         ALplayer = NULL;
         slider.value = 0.5;
+        
+        AVAudioSession *session = [AVAudioSession sharedInstance];
+        [session setCategory:AVAudioSessionCategoryPlayback error:nil];
     }
     return self;
 }
